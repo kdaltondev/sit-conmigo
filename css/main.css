@@ -12,7 +12,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   color: var(--text);
-  background-color:var(--main-bckgrnd);
+  background-color: var(--main-bckgrnd);
 }
 
 h1,
@@ -20,84 +20,132 @@ h2,
 h3 {
   font-family: "Fjalla One", sans-serif;
   color: var(--text);
-  text-align:center;
-  margin:0;
+  text-align: center;
+  margin: 0;
 }
 
 /*--------CTA Button Text Style and Subheading Text Style--------*/
-h2{
-    font-size:2rem;
+h2 {
+  font-size: 2rem;
 }
 
 /*---------Order Button Styles ------*/
-h3{
-    font-size:1.5rem;
+h3 {
+  font-size: 1.5rem;
 }
 
-p{
-    font-size:1rem;
+p {
+  font-size: 1rem;
+  margin:.5rem;
 }
 
-img{
-  width:100%;
-  border-radius:10px;
-
+img {
+  width: 100%;
+  border-radius: 10px;
 }
-.content-wrapper{
-  width:90%;
-  margin:0 auto;
-}
-
-nav ul{
-display:flex;
-  list-style:none;
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
-nav ul li{
-  padding:5px 10px;
-  color:var(--header-accent);
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
-address{
-  font-style:normal;
+nav ul li {
+  padding: 5px 10px;
+  color: var(--header-accent);
 }
 
-figure{
-  margin:0;
+address {
+  font-style: normal;
+}
 
+figure {
+  margin: 0;
 }
 /*---------Hero Section Styles-----*/
-.logo-img-container{
-  width:10%;
-  min-width:40px;
-  margin-top:1.25em;
-  
+.logo-img-container {
+  width: 10%;
+  min-width: 40px;
+  margin-top: 1.25em;
 }
-
 
 /*---------Helper Styles----------*/
-.subheading{
-  background:var(--subheading-bckgrnd);
-  margin:1em 0 2.875em;
-  padding:1.25rem;;
-  border-radius:10px;
+.subheading {
+  background: var(--subheading-bckgrnd);
+  margin: 1em 0 2.875em;
+  padding: 1.25rem;
+  border-radius: 10px;
 }
 
-.center{
-  text-align:center;
+.center {
+  text-align: center;
 }
 
-.btn{
-  background:var(--btn-bckgrnd);
-  width:100%;
-  border-radius:30px;
-  padding:.75rem 0;
-  margin:.75em 0 3em;
+.btn {
+  background: var(--btn-bckgrnd);
+  width: 100%;
+  border-radius: 30px;
+  padding: 0.75rem 0;
+  margin: 0.75em 0 3em;
 }
 
-.flex-space-between{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    max-width: 640px;
+  }
+  .product-list{
+ 
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-flow:row wrap;
+    padding:30px 30px 0;
+    border-radius:10px;
+  }
+  .product-card{
+    width:45%;
+  }
+  .about-content{
+  display:grid;
+   grid-template-columns:47% 47%;
+   grid-template-rows:auto auto auto;
+   justify-content:space-around;
+   column-gap:20px;
+   row-gap:15px;
+   margin-top:1rem;
+  }
+  .about-img{
+    grid-column:2 / 3;
+    grid-row: 1 / 3;
+  }
+  .about-p1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin:0;
+
+  }
+  .about-p2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin:0;
+  }
+  .about-p3{
+    grid-column:1 / 3;
+    grid-row: 3 / 4;
+    margin:0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    max-width: 960px;
+  }
