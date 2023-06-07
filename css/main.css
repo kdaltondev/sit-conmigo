@@ -1,0 +1,103 @@
+/*----------Global Styles-----------*/
+:root {
+  --main-bckgrnd: #026873;
+  --subheading-bckgrnd: #c5d3d9;
+  --text: #212121;
+  --btn-bckgrnd: #fdd51e;
+  --header-accent: #fdd51e;
+  --social-icons: #fdd51e;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: var(--text);
+  background-color:var(--main-bckgrnd);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fjalla One", sans-serif;
+  color: var(--text);
+  text-align:center;
+  margin:0;
+}
+
+/*--------CTA Button Text Style and Subheading Text Style--------*/
+h2{
+    font-size:2rem;
+}
+
+/*---------Order Button Styles ------*/
+h3{
+    font-size:1.5rem;
+}
+
+p{
+    font-size:1rem;
+}
+
+img{
+  width:100%;
+  border-radius:10px;
+
+}
+.content-wrapper{
+  width:90%;
+  margin:0 auto;
+}
+
+nav ul{
+display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  padding:5px 10px;
+  color:var(--header-accent);
+}
+
+address{
+  font-style:normal;
+}
+
+figure{
+  margin:0;
+
+}
+/*---------Hero Section Styles-----*/
+.logo-img-container{
+  width:10%;
+  min-width:40px;
+  margin-top:20px;
+  
+}
+
+
+/*---------Helper Styles----------*/
+.subheading{
+  background:var(--subheading-bckgrnd);
+  margin:15px 0 45px;
+  padding:20px;
+  border-radius:10px;
+}
+
+.center{
+  text-align:center;
+}
+
+.btn{
+  background:var(--btn-bckgrnd);
+  width:100%;
+  border-radius:30px;
+  padding:10px 0;
+  margin:10px 0 60px;
+}
+
+.flex-space-between{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
