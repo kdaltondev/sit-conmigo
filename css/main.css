@@ -70,7 +70,7 @@ figure{
 .logo-img-container{
   width:10%;
   min-width:40px;
-  margin-top:20px;
+  margin-top:1.25em;
   
 }
 
@@ -78,8 +78,8 @@ figure{
 /*---------Helper Styles----------*/
 .subheading{
   background:var(--subheading-bckgrnd);
-  margin:15px 0 45px;
-  padding:20px;
+  margin:1em 0 2.875em;
+  padding:1.25rem;;
   border-radius:10px;
 }
 
@@ -91,8 +91,8 @@ figure{
   background:var(--btn-bckgrnd);
   width:100%;
   border-radius:30px;
-  padding:10px 0;
-  margin:10px 0 60px;
+  padding:.75rem 0;
+  margin:.75em 0 3em;
 }
 
 .flex-space-between{
