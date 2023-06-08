@@ -7,6 +7,9 @@
   --header-accent: #fdd51e;
   --social-icons: #fdd51e;
 }
+html {
+  font-size: 16px;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -26,16 +29,16 @@ h3 {
 
 /*--------CTA Button Text Style and Subheading Text Style--------*/
 
-h1{
-  text-align:left;
-  font-size:2.2rem;
+h1 {
+  text-align: left;
+  font-size: 2.2rem;
 }
 h2 {
   font-size: 2rem;
 }
 
-.hero-txt{
-  display:none;
+.hero-txt {
+  display: none;
 }
 
 /*---------Order Button Styles ------*/
@@ -45,7 +48,7 @@ h3 {
 
 p {
   font-size: 1rem;
-  margin: 0.5rem;
+  margin: 0.75rem 0;
 }
 
 img {
@@ -81,12 +84,8 @@ figure {
   margin-top: 1.25em;
 }
 
-.hero-img{
-  background-image:url("../img/hero-img-urbe-green.png");
-  background-position:center;
-  background-size:cover;
-  background-repeat:none;
-  min-height:400px;
+.hero-image{
+  width:50%;
 }
 
 /*---------Helper Styles----------*/
@@ -104,7 +103,7 @@ figure {
 .btn {
   background: var(--btn-bckgrnd);
   width: 100%;
-  max-width:450px;
+  max-width: 450px;
   border-radius: 30px;
   padding: 0.75rem 0;
   margin: 0.75em 0 3em;
@@ -117,6 +116,10 @@ figure {
 }
 
 @media only screen and (min-width: 768px) {
+  html {
+    font-size: 24px;
+  }
+
   .content-wrapper {
     max-width: 640px;
   }
@@ -126,20 +129,17 @@ figure {
     margin-top: 1.25em;
   }
 
-  #hero-section .content-wrapper{
+  #hero-section .content-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-direction:row-reverse;
-    padding:50px 0;
+    flex-direction: row-reverse;
+    padding: 50px 0;
   }
-  .hero-txt{
-    display:block;
+  .hero-txt {
+    display: block;
   }
 
- #hero-section figure{
-  width:70%;
- }
   .product-list {
     display: flex;
     justify-content: space-around;
@@ -182,8 +182,21 @@ figure {
 }
 
 @media only screen and (min-width: 1200px) {
-h1{font-size:2.2rem;}
+  html {
+    font-size: 36px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
   .content-wrapper {
     max-width: 960px;
+  }
+  .about-img {
+    align-self: center;
   }
 }
